@@ -7,9 +7,23 @@
     <title>Blog Site | Sign Up</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/media.css">
+    <link rel="stylesheet" href="../../../common/styles/loader.css">
+    <link rel="stylesheet" href="../../../common/styles/anim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <article id="loader">
+        <span id="loader-icon">
+            <i class="fa-solid fa-rotate-right"></i>
+        </span>
+        <div class="loader-text-container">
+            <span id="loader-dynamic-text">Registered Successfully</span>
+            <span id="loader-static-text">Please Wait</span>
+        </div>
+    </article>
     <article class="content-container" id="sign-up-cont">
         <form id="sign-up-form" class="form">
             <h1>Sign Up</h1>
@@ -17,7 +31,8 @@
                 <p>Name</p>
                 <input type="text" name="fulltName" id="fulltName" placeholder="Enter your full name here">
             </div>
-            <div class="input-container">               <p>Email</p>
+            <div class="input-container">
+                <p>Email</p>
                 <input type="email" name="email" id="sign-up-email" placeholder="Enter your email here">
             </div>
             <div class="input-container">
@@ -40,4 +55,5 @@
     </article>
 </body>
 <script src="./main/script/sign_up.js" type="module"></script>
+
 </html>

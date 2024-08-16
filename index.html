@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Site | Home</title>
-    <link rel="stylesheet" href="./assests/main/styles/styles.css" >
+    <link rel="stylesheet" href="./assests/main/styles/styles.css">
+    <link rel="stylesheet" href="./assests/main/styles/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
-    <a href="./assests/Pages/Auth/Auth_Log/sign_in.html">Sign In</a>
+
+<body id="body">
+    <header>
+        <nav role="navigation" id="navbar">
+            <article class="row-nav-item">
+                <img src="./assests/main/media/logo.png" id="logo" alt="logo">
+            </article>
+            <ul class="row-nav-links">
+                <li class="link-container" id="row-nav-sign-in-link">
+                    <a href="./assests/Pages/Auth/Auth_Log/sign_in.html">SIGN IN</a>
+                </li>
+                <li id="row-nav-profile-toggler">
+                    <a href="./assests/Pages/userProfile/profile_dashboard.html">
+                        <img src="./assests/main/media/user-removebg-preview.png" alt="user-image"
+                            class="user-profile-image">
+                        <p id="user-name">
+                            Mohammad Shahzaib
+                        </p>
+                    </a>
+                </li>
+                <li class="link-container">
+                    <a href="./assests/Pages/Create_Blog/crblog.html" id="crblog-btn">Create your Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-sec">
+            <ul id="col-nav-links">
+                <li class="nav-link-container" onmouseenter="anchorCollapseMouseEnter(this)"
+                    onmouseleave="anchorCollapseMouseLeave(this)">
+                    <a href="./index.html" class="col-nav-parent-anchor-default">
+                        <span>
+                            <i class="fa-solid fa-house-chimney" style="font-size: 19px;"></i>
+                        </span>
+                        <p>
+                            Home
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-link-container" onmouseenter="anchorCollapseMouseEnter(this)"
+                    onmouseleave="anchorCollapseMouseLeave(this)">
+                    <a href="./index.html" class="col-nav-parent-anchor-default">
+                        <span>
+                            <i class="fa-solid fa-book"></i>
+                        </span>
+                        <p>
+                            Create a new Blog
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-link-container" onmouseenter="anchorCollapseMouseEnter(this)"
+                    onmouseleave="anchorCollapseMouseLeave(this)">
+                    <a href="./index.html" class="col-nav-parent-anchor-default">
+                        <span>
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <p>
+                            Profile
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+            <article id="blogs-main-container"> 
+            </article>
+        </section>
+    </main>
 </body>
-<script src=""></script>
+<script src="./assests/main/script/app.js" type="module"></script>
+<script src="./assests/main/script/script.js"></script>
+
 </html>

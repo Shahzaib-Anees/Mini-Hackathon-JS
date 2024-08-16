@@ -5,10 +5,13 @@ const signInForm = document.getElementById("sign-in-form");
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
+        loader("Already Logged In");
         const uid = user.uid;
         localStorage.setItem("currentUser", `${uid}`)
         console.log(`logged In ==> ${uid}`);
-        location.replace("../../../../index.html");
+        setTimeout(() => {
+            location.replace("../../../../index.html");
+        },200)
     } else {
         console.log("User is signed out");
         localStorage.removeItem("currentUser");

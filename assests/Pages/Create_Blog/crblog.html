@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloge Site | Create Blog</title>
+    <link rel="stylesheet" href="./main/styles/styles.css">
+    <link rel="stylesheet" href="../../../assests/common/styles/anim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <article id="pre-loader" class="rotate">
+        <i class="fa-solid fa-spinner"></i>
+    </article>
+    <article class="blog-form-container">
+        <form id="blog-form">
+            <h1>Create a Blog</h1>
+            <div class="input-field-container">
+                <span>Title</span>
+                <p>This is the title that will be displayed at the top of your Blog.</p>
+                <input type="text" name="blog-title"
+                required id="blog-title" placeholder="Enter Blog Title here">
+            </div>
+            <div class="input-field-container">
+                <span>Display Name</span>
+                <p>How do you want your name displayed to readers of your blog?</p>
+                <input type="text" name="blog-display-name" id="blog-display-name" required placeholder="Enter display here">
+            </div>
+            <div class="input-field-container">
+                <span>Descriptions</span>
+                <p>How do you want to describe your blog to readers?</p>
+                <input type="text" name="blog-description" id="blog-description" required
+                    placeholder="Enter Blog Description here">
+            </div>
+            <div class="input-field-container">
+                <span>Image</span>
+                <p>Image should be in "jpg" format.</p>
+                <input type="file" name="blog-image" id="blog-image" required
+                    placeholder="Enter Blog Description here">
+            </div>
+            <div class="button-container">
+                <button id="cancel-post">
+                    <a href="../../../index.html">
+                        Cancel
+                    </a></button>
+                <button type="submit">
+                    Post
+                </button>
+            </div>
+        </form>
+    </article>
+</body>
+<script src="./main/script/crblog.js" type="module"></script>
+
+</html>

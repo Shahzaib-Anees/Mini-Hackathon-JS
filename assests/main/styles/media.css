@@ -1,0 +1,29 @@
+@media(min-width : 200px)and (max-width : 740px) {
+    #navbar {
+        padding: 2px 5px;
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    #menu-toggler {
+        display: flex;
+    }
+
+    #user-name {
+        display: none;
+    }
+
+    #crblog-btn {
+        display: none;
+    }
+
+
+    .user-profile-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

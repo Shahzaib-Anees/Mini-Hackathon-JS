@@ -4,7 +4,7 @@
     --font: "Roboto", "sans-serif";
     --greyish: #656565;
     --charcoal-clack: #101010;
-    --border-color: #2272b4;
+    --primary-color: #E96D28;
     --white-shade: #fbfbfb;
 }
 
@@ -74,12 +74,12 @@ body {
 }
 
 .form>.input-container>input:hover {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--primary-color);
     outline: none;
 }
 
 .form>.input-container>input:focus {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--primary-color);
     outline: none;
 }
 
@@ -92,7 +92,7 @@ body {
     letter-spacing: 3px;
     padding: 7px 0px;
     color: #fff;
-    background-color: var(--border-color);
+    background-color: var(--primary-color);
     border-radius: 5px;
     margin-top: 15px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -105,7 +105,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    background-color: var(--border-color);
+    background: rgb(166,67,12);
+background: linear-gradient(180deg, rgba(166,67,12,1) 0%, rgba(208,101,42,1) 35%, rgba(233,110,42,1) 100%);
     padding: 10px 10px;
     color: var(--white-shade);
     font-family: var(--font);

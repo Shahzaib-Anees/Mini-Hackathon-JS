@@ -1,0 +1,47 @@
+body {
+    padding: 5px 10px;
+    margin: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.blog-container {
+    width: fit-content;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#blog-image {
+    width: 65vw;
+    height: 450px;
+}
+
+.blog-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 80px;
+}
+
+
+#blog-display-name{
+    font-size: 30px;
+    font-family: var(--font);
+    color: #101010;
+    font-weight: 800;
+}
+
+#blog-title{
+    font-size: 20px;
+    font-family: var(--font);
+}
+

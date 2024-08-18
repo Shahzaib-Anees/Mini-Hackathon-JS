@@ -3,7 +3,7 @@ import { doc, db, collection, addDoc, storage, ref, uploadBytes, getDownloadURL 
 
 const crBlogPostForm = document.getElementById("blog-form");
 
-const currentUser = localStorage.getItem("currenUser");
+const currentUser = localStorage.getItem("currentUser");
 
 const addBlogtoDataBase = async (blogTitle, blogDisplayName, blogDescription, blogImageUrl) => {
     try {
